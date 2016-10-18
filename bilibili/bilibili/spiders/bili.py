@@ -7,8 +7,7 @@ class BiliSpider(scrapy.Spider):
 	name = "bili"
 	baseUrl = 'http://api.bilibili.com/archive_stat/stat'
 	index = 6107145
-	# endIndex = 6476162
-	endIndex = 6107245
+	endIndex = 6476162
 	pattern = re.compile(r"{.*}")
 
 	def start_requests(self):
