@@ -16,3 +16,10 @@ bilibili没有反爬虫机制，不影响网站运行和抓取时间，将时间
 
 数据下载地址(https://github.com/isghost/raisin/releases)
 =================
+
+进一步处理
+=======
+从获取到的信息里面，筛选出播放数量排名前1000的数据`TOP1000.csv`，转为json`top1000.json`，根据url获取
+更加详细的信息。
+
+	scrapy crawl biliname -o top1000info.csv
